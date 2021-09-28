@@ -4,5 +4,16 @@
  var tela = document.querySelector('canvas');
  var pincel = tela.getContext('2d');
 
-pincel.fillStyle = 'green';
+ function pintarTela(x, y, cor){
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        
+    }
+
+pintarTela(0, 50, 'red');
+pintarTela(100, 150, 'blue');
+pintarTela(200, 250 ,'pink');
+pintarTela(300, 350, 'black');
+pintarTela(400, 450, 'yellow');
+
 </script>

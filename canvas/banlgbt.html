@@ -1,0 +1,29 @@
+<canvas width="600" height="400">
+
+</canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function pintarTela(x, y, cor){
+        
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+
+    }
+    var x = 0;
+    while(x < 600){
+
+        pintarTela(x, 0, 'red');
+        pintarTela(x, 50, 'orange');
+        pintarTela(x, 100, 'yellow');
+        pintarTela(x, 150, 'green');
+        pintarTela(x, 200, 'blue');
+        pintarTela(x, 250, 'purple');
+
+        x = x + 50;
+
+
+    }
+</script>
